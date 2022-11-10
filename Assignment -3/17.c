@@ -1,23 +1,19 @@
+/* 17. Write a program which takes the length of the sides of a
+       triangle as an input. Display whether the triangle is valid or not. */
 
-// 17. Write a program which takes the length of the sides of a triangle as an input.
-//     Display whether the triangle is valid or not.
-
-#include<stdio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
 {
-    int x,y,z;
-    //float total;
-    printf("Enter 3 sides of the Triangle : ");
-    scanf("%d %d %d",&x,&y,&z);
-    //total =
-    if( (z*z)>= ((x*x)+(y*y)) )
-    {
-        printf("Yes! This is valid Triangle");
-    }
+    int a, b, c;
+    printf("Enter length of the sides of a triangle: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    if (a + b > c && b + c > a && c + a > b)
+        printf("Valid Traingle");
     else
-    {
-        printf("NO! This is not valid  Triangle");
-    }
+        printf("Invalid Tringle");
+
     return 0;
 }

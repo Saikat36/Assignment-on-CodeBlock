@@ -9,7 +9,7 @@ int main()
     printf("Enter a number to check no is Odd or Even: ");
     scanf("%d",&x);
 
-    ( x & 1 ) == 1 ? printf("%d is Odd Number",x) : printf("%d is Even",x);
+    ( x & 1 ) ? printf("%d is Odd Number",x) : printf("%d is Even",x);
 
     return 0;
 }

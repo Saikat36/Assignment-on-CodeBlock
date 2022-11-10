@@ -5,7 +5,7 @@ int main()
 {
     int x = 6;
 
-    while( x <= 5);
+    while( x <= 5);          // LOOK at the last ( ; )
     {
         printf("Hello\n");
         x--;
