@@ -6,10 +6,7 @@
 
 int main()
 {
-    int x, count = 0;
-    printf("Enter any number: ");
-    scanf("%d",&x);
-
+    int x = 12, count = 0;
     while (x != 0)
     {
         count++;
