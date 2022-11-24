@@ -15,11 +15,8 @@ int main()
 
 void natural_num(int num)
 {
-    for (int i = 1; i <= num; i++)
+    for (int i = 1; i <= num; i=i+2)
     {
-        if (i % 2 == 1)
-        {
-            printf("%d ", i);
-        }
+        printf("%d ", i);
     }
 }
