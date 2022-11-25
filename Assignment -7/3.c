@@ -10,7 +10,7 @@ int main()
 
     printf("Enter the value of num \n");
     scanf("%d", &num);
-    
+
     count = 2;
 
     while (count < num)
@@ -26,13 +26,14 @@ int main()
         fib2 = fib3;
     }
 
-    if (flag==0)
+    if (flag == 0)
     {
-        printf("%d is not in the FIBONACCI series",num);
+        printf("%d is not in the FIBONACCI series", num);
     }
-    else{
-        printf("%d is in the FIBONACCI series",num);
+    else
+    {
+        printf("%d is in the FIBONACCI series", num);
     }
-    
+
     return 0;
 }

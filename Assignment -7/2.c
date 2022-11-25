@@ -6,14 +6,13 @@
 
 int main()
 {
-    int fib1 = 1, fib2 = 1, fib3, count, num;
+    int fib1 = 1, fib2 = 1, fib3, count = 2, num;
 
     printf("Enter the value of num \n");
     scanf("%d", &num);
     printf("First %d FIBONACCI numbers are ... \n", num);
     printf("%d\n", fib1);
     printf("%d\n", fib2);
-    count = 2;
 
     while (count < num)
     {
