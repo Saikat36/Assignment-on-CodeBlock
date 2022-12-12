@@ -19,9 +19,11 @@ int main()
 
     for (int i = 0; i < 8; i++)
     {
-        hash[a[i]]++; //  i = 0, a[0] = 2, hash[2] = 1
-                      //  i = 1, a[1] = 3, hash[3] = 1
-                      //  i = 2, a[2] = 3, hash[3] = 1+1 = 2
+        int x = a[i];
+        
+        hash[x]++; //  i = 0, a[0] = 2, hash[2] = 1
+                   //  i = 1, a[1] = 3, hash[3] = 1
+                   //  i = 2, a[2] = 3, hash[3] = 1+1 = 2
     }
 
     for (int i = 0; i < 8; i++)
