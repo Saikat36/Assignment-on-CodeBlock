@@ -1,6 +1,5 @@
 
 
-
 /* Write a programe to print upper diagonal in a 2d array */
 
 #include <stdio.h>
@@ -11,8 +10,6 @@ int main()
                    4, 5, 6,
                    7, 8, 9};
 
-    int b[3][3];
-
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
@@ -21,7 +18,8 @@ int main()
             {
                 printf("%d ", a[i][j]);
             }
-            else{
+            else
+            {
                 printf("0 ");
             }
         }

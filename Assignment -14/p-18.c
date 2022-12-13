@@ -1,6 +1,6 @@
 
 
-/* WAP to check fiven string is palindrome or not */
+/* WAP to check given string is palindrome or not */
 
 /* palindrome:  soja dik theka porle ba ulto dik theka porlau soman asbe jamon "nayan"  =>  "nayan" &&   "nitin"  =>  "nitin" */
 
@@ -10,26 +10,28 @@
 int main()
 {
     char a[] = "nitin";
-    int i = 0, j = strlen(a)-1;
+    int i = 0, j = strlen(a) - 1;
 
-    while (i<=j)
+    while (i <= j)
     {
-        if(a[i]==a[j])
+        if (a[i] == a[j])
         {
             i++;
             j--;
         }
-        else{
+        else
+        {
             break;
         }
     }
-    
-    if (i>j)
+
+    if (i > j)
     {
-        printf("Palindrome");
+        printf("\n\nPalindrome\n\n");
     }
-    else{
-        printf("Not a palindrome");
+    else
+    {
+        printf("\n\nNot a palindrome\n\n");
     }
     return 0;
 }
