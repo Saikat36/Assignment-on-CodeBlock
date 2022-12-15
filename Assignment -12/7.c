@@ -13,6 +13,6 @@ int main()
     {
         square = square * (i * i);
     }
-    printf("squares of first %d natural number is: %d", N,square);
+    printf("squares of first %d natural number is: %d", N, square);
     return 0;
 }
