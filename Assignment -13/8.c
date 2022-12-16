@@ -1,6 +1,9 @@
 
 
-/* 8. Write a recursive function to print first N terms of Fibonacci series */
+/* 8. Write a recursive function to print sum of first N terms of Fibonacci series */
+
+/* right a6e kintu question a series bar korta bola6ilo R akena oi nth term a je value ta hoi seta return kor6a jodi nth term series dekhta hoi tobe, p-2.c te dekhta pabe */
+
 
 #include <stdio.h>
 

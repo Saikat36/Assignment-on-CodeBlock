@@ -2,6 +2,9 @@
 
 /* 9. Write a program in C to count the digits of a given number using recursion */
 
+/* 12 no line a static use kora hoa6a kintu easy process p-3.c te a6e  */
+
+
 #include <stdio.h>
 
 int count(int n)

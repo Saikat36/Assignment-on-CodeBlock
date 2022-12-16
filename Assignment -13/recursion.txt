@@ -1,0 +1,9 @@
+
+
+
+ kokon kokkon recursion use korta hobe tar rule:- 
+
+1. Repeted kaj hote hobe 
+2. task tar size dhira dhira komte hobe  
+3. kono loop-er bodole recursive function tai bar bar call hobe 
+

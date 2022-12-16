@@ -11,6 +11,8 @@ int sum(int n)
         return n;
     }
 
+            /*  if n = 145 then we should run the programe ( 1 + 4 + 5 ) =  10  */
+
     return (n % 10) + sum(n / 10);
 }
 

@@ -2,19 +2,21 @@
 
 /* 10. Write a program in C to calculate the power of any number using recursion */
 
-/* vul a6e , p-4.c te right ans a6e  */
-
 #include <stdio.h>
 
-int power(int n, int m)
+float power(float x, float y)
 {
-    if (m == 1)
+    if (y == 0)
     {
-        return n;
+        return 1;
+    }
+    else if (y > 0)
+    {
+        return x * power(x, y - 1);
     }
     else
     {
-        return n * power(n, m - 1);
+        return power(x, y + 1)/x;
     }
 }
 
@@ -23,6 +25,6 @@ int main()
     int n, m;
     printf("\nEnter a no: ");
     scanf("%d %d", &n, &m);
-    printf("\nPower of %d no is: %d\n\n", n, power(n, m));
+    printf("\nPower of %d no is: %f  \n\n", n, power(n, m));
     return 0;
 }
