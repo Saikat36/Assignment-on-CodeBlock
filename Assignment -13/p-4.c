@@ -12,12 +12,12 @@ float power(float x, float y)
     }
     else if (y > 0)
     {
-        return x * power(x, y - 1);
+        return x * power(x, y - 1); // 2^3 = 2 * 2^2
     }
     else
     {
-        return power(x, y + 1)/x;
-    }
+        return power(x, y + 1) / x; // y = -1, power(2,-1 + 1)/2 = power(2,0)/2 = 0.50
+    }                               // y = -2, power(2,-1)/2 = (power(2,0)/2)/2 = 0.25
 }
 
 int main()
