@@ -34,7 +34,7 @@ int main()
     {
         for (j = 0; j < 2; j++)
         {
-            printf("%d\t", c[i][j]);
+            printf("%d ", c[i][j]);
         }
         printf("\n");
     }

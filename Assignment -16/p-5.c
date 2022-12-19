@@ -5,7 +5,7 @@
 
 int main()
 {
-    int a[10] = {-90, -95, 10, 43, -83, 11, 15, -35, 3, 56};
+    int a[10] = {2, 5, 10, 4, 3, 11, 15, -35, 3, 56};
     int i;
     int max1 = -1, max2 = -2;
 
@@ -16,11 +16,8 @@ int main()
             max2 = max1;
             max1 = a[i];
         }
-
-        else if (a[i] > max2)
-        {
+        else if (max2 < a[i])
             max2 = a[i];
-        }
     }
     printf("Second largest element is %d\n\n", max2);
     return 0;
