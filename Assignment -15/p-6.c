@@ -18,7 +18,7 @@ void findmax(int x[], int size)
 
 int main()
 {
-    int a[5] = {2, 5, 3, 8, 9};
+    int a[] = {2, 5, 3, 8, 9};
 
     findmax(a, 5);
 
