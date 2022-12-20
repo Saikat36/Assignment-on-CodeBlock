@@ -31,11 +31,11 @@ int main()
     /*   TOTAL  ROUND - 9 */   /* So here Round = r = 9  */
 
 
-    for (r = 1; r <= 9; r++) // 1-9 value sort hole 0th value automatically right jaigai thakbe
+    for (r = 1; r <= 9; r++) // Total for loop take 9 bar ghurano hobe 
     {
-        for (i = 0; i <= 9 - r; i++)   // i=0 to i=8 because when i=8 then in the next line a[8]>a[8+1]
+        for (i = 0; i <= 9 - r; i++)   // 1st time i=0 to i=8 total 9 bar cholbe then in the next line a[8]>a[8+1]
         {
-            if (a[i] > a[i + 1])    // i=0 to i=1;    i=1 to i=2    when i=8 then i=8+1=9
+            if (a[i] > a[i + 1])    // i=0 to i=1 to ........ i=8 then i= 8+1 = 9
             {
                 t = a[i];
                 a[i] = a[i + 1];

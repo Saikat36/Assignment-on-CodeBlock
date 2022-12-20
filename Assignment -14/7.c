@@ -3,6 +3,8 @@
 /* 7. Write a program to find second largest in an array.
 Take array values from the user. */
 
+/* Ai programe ta again p.5.c te banano hoa6a */
+
 #include <stdio.h>
 
 int main()

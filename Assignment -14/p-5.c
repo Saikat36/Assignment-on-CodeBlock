@@ -1,27 +1,42 @@
 
 /* write a programe to find 2nd largest element */
+/* Ai programe ta again 7.c te banano hoa6a */
 
 #include <stdio.h>
 
 int main()
 {
-    int a[10] = {-90, -95, 10, 43, -83, 11, 15, -35, 3, 56};
-    int i;
-    int max1 = -1, max2 = -2;
+    int i, a[10], max, second_max;
 
-    for (i = 0; i < 10; i++)
+    printf("Enter 10 numbers:\n");
+
+    for (i = 0; i <= 9; i++)
     {
-        if (a[i] > max1)
+        scanf("%d", &a[i]);
+    }
+
+    max = a[0];         // value store kora nilam manually 
+    second_max = a[1];  // value store kora nilam manually 
+
+    /* ********************************************************* */
+    for (i = 2; i <= 9; i++)
+    {
+        if (a[i] > max)
         {
-            max2 = max1;
-            max1 = a[i];
+            second_max = max;
+            max = a[i];
         }
 
-        else if (a[i] > max2)
+        else    // a[i] < max
         {
-            max2 = a[i];
+            if (a[i] > second_max)
+            {
+                second_max = a[i];
+            }
         }
     }
-    printf("Second largest element is %d\n\n", max2);
+    /* ********************************************************* */
+    printf("\nSecond Largest number is %d", second_max);
+    printf("\n");
     return 0;
 }
