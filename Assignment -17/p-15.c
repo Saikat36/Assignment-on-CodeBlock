@@ -13,13 +13,13 @@ int main()
     gets(a1);
     fgets(a2, 20, stdin);
 
-    a2[strlen(a2) - 1] = '\0'; // VVI point
+    a2[strlen(a2) - 1] = '\0';      // VVI point
+    printf("Length 2 = %d\n", strlen(a2));
 
     for (i = 0; a1[i] != '\0'; i++)
         length1++;
 
     printf("Length 1 = %d\n", length1);
-    printf("Length 2 = %d\n", strlen(a2));
 
     return 0;
 }
