@@ -2,7 +2,7 @@
 
 /* WAP to check given string is palindrome or not */
 
-/* palindrome:  soja dik theka porle ba ulto dik theka porlau soman asbe jamon "nayan"  =>  "nayan" &&   "nitin"  =>  "nitin" */
+/* palindrome:  soja dik theka porle ba ulto dik theka porlau soman asbe jamon "nayan"  =>  "nayan" && "nitin"  =>  "nitin" */
 
 #include <stdio.h>
 #include <string.h>

@@ -1,6 +1,7 @@
 
 
 /* WAP to find the length of the string */
+/* Easy technic ta "length.c" te a6a */
 
 #include <stdio.h>
 #include <string.h>
@@ -13,13 +14,17 @@ int main()
     gets(a1);
     fgets(a2, 20, stdin);
 
-    a2[strlen(a2) - 1] = '\0';      // VVI point
-    printf("Length 2 = %d\n", strlen(a2));
 
     for (i = 0; a1[i] != '\0'; i++)
         length1++;
-
     printf("Length 1 = %d\n", length1);
+
+
+    a2[strlen(a2) - 1] = '\0';      // VVI point
+    printf("Length 2 = %d\n", strlen(a2));
+
+
+
 
     return 0;
 }
