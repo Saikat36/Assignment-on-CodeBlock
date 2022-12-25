@@ -23,8 +23,5 @@ int main()
     a2[strlen(a2) - 1] = '\0';      // VVI point
     printf("Length 2 = %d\n", strlen(a2));
 
-
-
-
     return 0;
 }
