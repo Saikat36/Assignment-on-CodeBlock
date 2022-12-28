@@ -2,7 +2,7 @@
 /* WAP to find frequency of all character in the given string */
 
 #include <stdio.h>
-
+#include<string.h>
 int main()
 {
     char a[122];
@@ -10,7 +10,10 @@ int main()
 
     printf("\nEnter a string of lowercase English letters : ");
     
-    gets(a);    //fgets(a, sizeof(a), stdin) a run korbena tai gets use kora holo
+    /* use gets(a) or fgets(a, sizeof(a), stdin)  */
+    
+    fgets(a, sizeof(a), stdin);
+    a[strlen(a)-1] = '\0';
 
     int hash[122] = {0};
 
