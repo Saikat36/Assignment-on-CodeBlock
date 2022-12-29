@@ -23,10 +23,10 @@ int main()
 
     printf("Enter your name: ");
 
-    fgets(str, 20, stdin);
+    fgets(str, 20, stdin);    // sizeof(str) = 20 
 
     str[strlen(str) - 1] = '\0';
-    i = strlen(str);
+    i = strlen(str);         // strlen(str) = string length   
     printf("Length of %s is %d", str, i);
 
     printf("\n\n");

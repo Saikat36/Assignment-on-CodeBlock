@@ -11,7 +11,7 @@ int main() {
     int i;  // counter variable
 
     printf("Enter a string: ");
-    scanf("%[^\n]s", str);  // read the string from the user
+    scanf("%s", str);  // read the string from the user
 
     for (i = 0; str[i] != '\0'; i++);  // loop until the end of the string
 
