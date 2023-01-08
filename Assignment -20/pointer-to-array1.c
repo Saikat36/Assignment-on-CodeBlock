@@ -19,7 +19,7 @@ int main()
 
 
 
-    int(*p)[5] = a;                   /* atar madhome bojha ai p name ar pointer ta "a" name  array ke point kor6a jar modha total 5 ta element a6a,                  
+    int(*p)[5] = a;                   /* atar madhome bojha ai p name ar pointer ta "a" name  array ke point kor6a jar modha total 5 ta element a6a, tai nicha jokon 35 no line a " p++ " kora ho66a tokon-               
                        "p" prothoma 0th point dhor6a, 
                                then 5th point dhor6a, 
                                then 10th point dhor6a,
@@ -31,7 +31,7 @@ int main()
 
     for (i = 0; i < 10; i++)
     {
-        printf("%d ", **p);
+        printf("%d ", **p);     // 1 6 11 16 21 26 31 36 41 46
         p++;
     }
 

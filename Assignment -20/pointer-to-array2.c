@@ -1,3 +1,6 @@
+
+
+
 #include<stdio.h>
 
 int main()
@@ -19,7 +22,7 @@ int main()
             printf("%u ", *(*(p+i)+j));     // *(*(p+i)+j) = p[i][j]
         }
         printf("\n");
-    }
+    } 
     return 0;
 
 }
