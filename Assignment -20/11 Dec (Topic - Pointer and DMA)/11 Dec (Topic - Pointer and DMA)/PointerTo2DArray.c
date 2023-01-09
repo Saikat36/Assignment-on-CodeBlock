@@ -18,9 +18,10 @@ int main()
 
     printf("\n\n");
 
-    printf("%u %u\n", a, &a);
+    printf("%u %u\n", a, &a);                  
 
-    printf("%u %u\n", a + 1, &a + 1);
+    printf("%u %u\n", a + 1, &a + 1);       /*  (a+1) -  (a)  =  6422000 - 6421984 =  16  */
+                                            /*  (&a+1) - (&a) =  6422032 - 6421984 =  48  */
     
     printf("\n\n");
     return 0;
