@@ -4,17 +4,34 @@
 
 #include<stdio.h>
 
+// int main()
+// {
+//     int length = 0;
+
+//     char name[] = "argho";
+
+//     for (int i = 0; name[i] != '\0'; i++)
+//     {
+//         length++;
+//     }
+//     printf("Length is : %d\n",length);
+
+//     return 0;
+// }
+
+
+
+#include<string.h>
+
 int main()
 {
-    int length = 0;
+    
+    char name[30] = "argho";
 
-    char name[] = "argho";
+    int length = strlen(name);
 
-    for (int i = 0; name[i] != '\0'; i++)
-    {
-        length++;
-    }
     printf("Length is : %d\n",length);
 
     return 0;
 }
+

@@ -29,7 +29,7 @@ int main()
     {
         if (hash[i])
         {
-            printf("%c", i);
+            printf("%c", i);     // i = 65 a "%c" ar jonno print hobe "a"
         }
     }
     printf("\n\n\n");

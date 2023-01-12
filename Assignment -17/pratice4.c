@@ -3,7 +3,7 @@
 /* WAP to search a name in the given list of string */
 
 #include <stdio.h>
-#include<string.h>
+#include <string.h>
 
 int main()
 {
