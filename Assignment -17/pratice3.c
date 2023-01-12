@@ -15,17 +15,17 @@ int main()
     char str[10][20];
     char temp[10];
 
-    printf("Enter number of names : ");
+    printf("\nEnter number of names : ");
     scanf("%d", &n);
 
-    printf("Enter names in any order: ");
+    printf("\nEnter names in any order: ");
 
     for (i = 0; i < n; i++)
     {
         scanf("%s", str[i]);
     }
 
-    for (i = 0; i < n-1; i++)
+    for (i = 0; i < n - 1; i++)
     {
         for (j = i + 1; j < n; j++)
         {
@@ -48,3 +48,18 @@ int main()
 
     return 0;
 }
+
+/* 
+    char s1[] = "Scaler Academy";
+    char s2[] = "Interviewbit";
+    char s3[100];
+
+    strcpy(s2, s1); // The content of the string s1 will be copied to string s2
+
+    printf("%s\n", s2);    // =>     Scaler Academy
+
+    strcpy(s1, strcpy(s3, s2));
+
+    printf("%s\n", s1);    // =>     Scaler Academy
+
+ */
