@@ -5,18 +5,33 @@
 #include <stdio.h>
 #include <string.h>
 
-int get_length(char str);
+int cal_Length(char *string);
+
 int main()
 {
-    char str[20];
+    char str[100];
+    printf("\nEnter a string: ");
 
-    printf("Length is: %d",length(str);
+    fgets(str, sizeof(str), stdin);
+    str[strlen(str) - 1] = '\0';
+
+    printf("\nYou entered: %s\n", str);
+
+    int length = cal_Length(str);
+    printf("\nlength of the string is : %d", length);
+
+    printf("\n\n");
+
+    return 0;
 }
 
-int length(char str)
+int cal_Length(char *string)
 {
-    printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
-
-    str[strlen(str) - 1] = '\0';
+    int length = 0;
+    while (*string != '\0')
+    {
+        length++;
+        string++;
+    }
+    return length;
 }

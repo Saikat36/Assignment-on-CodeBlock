@@ -1,3 +1,5 @@
+
+
 #include<stdio.h>
 void print(int x[][3], int row,int col)
 {

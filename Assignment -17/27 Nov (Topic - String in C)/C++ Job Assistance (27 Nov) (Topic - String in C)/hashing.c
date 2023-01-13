@@ -7,6 +7,7 @@ int main()
 
     for(i=0 ; i< 11; i++)
         hash[a[i]]++;
+        
     for(i=0; i<100; i++)
     {
         if(hash[i] == 1)

@@ -15,7 +15,8 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        gets(str[i]);           // fgets(str[i][j],sizeof(str[i][j]),stdin);
+        gets(str[i]);        /*     fgets(str[i], sizeof(str), stdin);
+                                    str[i][strlen(str) - 1] = '\0';         */
     }
 
     printf("\n\nEnter a character to find its frequency: ");
@@ -23,7 +24,7 @@ int main()
 
     for (int i = 0; i < 5; i++)
     {
-        for (int j = 0; j < str[i][j]; j++)
+        for (int j = 0; str[i][j] !='\0'; j++)
         {
             if (ch == str[i][j])
             {

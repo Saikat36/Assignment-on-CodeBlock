@@ -22,7 +22,7 @@ int main()
 
     for (i = 0; i < n; i++)
     {
-        scanf("%s", str[i]);
+        scanf("%s", str[i]);            // string input nayar somoy "scanf" a "&" use hoina  
     }
 
     for (i = 0; i < n - 1; i++)
