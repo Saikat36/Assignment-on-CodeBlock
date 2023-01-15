@@ -9,7 +9,7 @@ int cal_Length(char *string);
 
 int main()
 {
-    char str[100];
+    char str[20];
     printf("\nEnter a string: ");
 
     fgets(str, sizeof(str), stdin);
