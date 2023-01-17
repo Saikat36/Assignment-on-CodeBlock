@@ -19,7 +19,7 @@ void display(int *p, int size)
 {
     for (int i = 0; i < size; i++)
     {
-        printf("%d ", *(p+i));
+        printf("%d ", *(p+i) ); //  *(p+i) = p[i]
     }
 }
 
