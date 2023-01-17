@@ -6,13 +6,13 @@
 
 int main()
 {
-    char strings[5][100]; // 2D array to store the strings
+    char strings[5][20]; // 2D array to store the strings
     int i, j, count;
 
     printf("Enter 5 strings: \n");
     for (i = 0; i < 5; i++)
     {
-        scanf("%s", strings[i]); // taking input of the strings
+        scanf("%s", &strings[i]); // taking input of the strings
     }
 
     for (i = 0; i < 5; i++)

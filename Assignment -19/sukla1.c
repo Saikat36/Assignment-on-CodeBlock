@@ -29,7 +29,7 @@ void input(int *p, int size)
 
     for (int i = 0; i < size; i++)
     {
-        scanf("%d",(p+i));
+        scanf("%d",&p[i]);  // (p+i) = &p[i]
     }
 }
 
