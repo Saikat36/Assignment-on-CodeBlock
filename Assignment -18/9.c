@@ -18,11 +18,11 @@ void reverse(char *name, int start, int end)
 
 int main()
 {
-    char name[] = "prateek jain";
+    char name[] = "iNeuron Education Services";
     int length = 0, nullFound = 0;
     int i, j;
 
-    for (i = 0, j = 0; name[j] != '\0';)
+    for (i = 0, j = 0;  name[j] != '\0';       )
     {
         while (name[j] != ' ')
         {

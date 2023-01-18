@@ -6,7 +6,7 @@
 
 int main()
 {
-    int i,j,row, col;
+    int i, j, row, col;
     printf("Enter the number of rows: ");
     scanf("%d", &row);
     printf("Enter the number of columns: ");
@@ -21,21 +21,19 @@ int main()
         for (j = 0; j < col; j++)
         {
             printf("Enter element at index (%d, %d): ", i, j);
-            scanf("%s", &array[i][j]);
+            scanf("%c", &array[i][j]);
         }
     }
 
     // Display the array
 
     printf("The 2D array of strings is:\n");
-    printf("Rows:%d\n",row);
-    printf("Cols:%d\n",col);
 
     for (i = 0; i < row; i++)
     {
         for (j = 0; j < col; j++)
         {
-            printf("%s", array[i][j]);
+            printf("%s\t", array[i][j]);
         }
         printf("\n");
     }
