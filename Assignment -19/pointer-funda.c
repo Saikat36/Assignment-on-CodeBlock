@@ -7,6 +7,7 @@ void input(int *p, int size);
 int main()
 {
     int a[10];
+    a[0] = 5;
 
     printf("\na[0] = %d\n",a[0]);
     printf("&a[0] = %d\n",&a[0]);
@@ -35,6 +36,8 @@ void input(int *p, int size)
     printf("p = %d = &a[0] = Address of a[0]\n",p);
     printf("p[0] = %d = a[0] = value at a[0]\n",p[0]);
     printf("p[i] = value at a[i]\n");
+    printf("*(p+i) = %d = value at *(p+i)\n",*(p+0));   // here " i = 0 "
+    printf("*(p+i) = p[i]\n");
     printf("p+1 = %d\n",p+1);
     printf("&p[0] = %d\n",&p[0]);
     printf("&p[1] = %d\n",&p[1]);
