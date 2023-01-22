@@ -18,7 +18,7 @@ int main()
     str[strlen(str) - 1] = '\0';       // strlen(str) = string length
 
     int hash[122] = {0};
-
+    
     for (i = 0; str[i]; i++)
     {
         hash[str[i]]++;
