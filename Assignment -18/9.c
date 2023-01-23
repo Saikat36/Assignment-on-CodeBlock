@@ -19,10 +19,10 @@ void reverse(char *name, int start, int end)
 int main()
 {
     char name[] = "iNeuron Education Services";
-    int length = 0, nullFound = 0;
+    int nullFound = 0;
     int i, j;
 
-    for (i = 0, j = 0;  name[j] != '\0';       )
+    for (i = 0, j = 0; name[j] != '\0';)
     {
         while (name[j] != ' ')
         {
@@ -31,7 +31,7 @@ int main()
                 nullFound = 1;
                 break;
             }
-            j++;
+            j = j + 1;
         }
 
         reverse(name, i, j - 1);
@@ -44,6 +44,6 @@ int main()
         }
     }
     reverse(name, 0, j - 1);
-    printf("\n\n %s \n\n", name);
+    printf("\n\n%s\n\n", name);
     return 0;
 }
