@@ -12,9 +12,6 @@ if a IP address is 34.47.12 then it is invalid bcz it has 3 no
 
 */
 
-
-/* SUKLA VIDEO TAI DEKHTA HOBA AI ANS TA  */
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -38,12 +35,14 @@ int validate_ip(char *ip)
     int i, num, dots = 0;
     char *ptr;
 
+    printf("%d = ",ip);
+
     if (ip == NULL)
     {
         return 0;
     }
 
-    ptr = strtok(ip, "."); /* String to token */
+    ptr = strtok(ip, ".");  /* String to token */
 
     if (ptr == NULL)
     {
@@ -52,7 +51,7 @@ int validate_ip(char *ip)
 
     while (ptr)
     {
-        if (!validate_number(ptr))
+        if (validate_number(ptr) == 0)
         {
             return 0; // 29
         }
@@ -66,10 +65,10 @@ int validate_ip(char *ip)
             {
                 dots++;
             }
-            else
-            {
-                return 0;
-            }
+        }
+        else
+        {
+            return 0;
         }
     }
 
@@ -84,16 +83,16 @@ int validate_ip(char *ip)
 int main()
 {
     char ip[][20] = {"192.165.32.12",
-                     "173.64.213.74",
+                     "073.64.213.74",
                      "17.64.23.54",
                      "18.684.279.abc"};
-    
+
     int i;
 
     for (i = 0; i < 4; i++)
     {
         validate_ip(ip[i]) ? printf("Valid\n") : printf("Invalid\n");
     }
-    
+
     return 0;
 }

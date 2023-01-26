@@ -8,11 +8,11 @@
 int main()
 {
     char *strings[] = {"hello", "level", "madam", "racecar", "world"};
-    int num_strings = sizeof(strings) / sizeof(strings[0]);
+    int strings_len = sizeof(strings) / sizeof(strings[0]);
 
-    for (int i = 0; i < num_strings; i++)
+    for (int i = 0; i < strings_len; i++)
     {
-        int length = strlen(strings[i]);
+        int length = strlen(strings[i]);    // length = strlen(hello) = 5
         int palindrome = 1;
 
         for (int j = 0; j < length / 2; j++)
