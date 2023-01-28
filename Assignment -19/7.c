@@ -17,18 +17,28 @@ if a IP address is 34.47.12 then it is invalid bcz it has 3 no
 #include <stdlib.h>
 #include <ctype.h>
 
-int validate_number(char *str)
+int validate_ip(char *ip);
+int validate_number(char *str);
+
+
+int main()
 {
-    while (*str)
+    char ip[][20] = {"192.165.32.12",
+                     "073.64.213.74",
+                     "17.64.23.54",
+                     "18.684.279.abc"};
+
+    int i;
+
+    for (i = 0; i < 4; i++)
     {
-        if (isdigit(*str) == 0)
-        {
-            return 0;
-        }
-        str++;
+        validate_ip(ip[i]) ? printf("Valid\n") : printf("Invalid\n");
     }
-    return 1;
+
+    return 0;
 }
+
+
 
 int validate_ip(char *ip)
 {
@@ -42,7 +52,7 @@ int validate_ip(char *ip)
         return 0;
     }
 
-    ptr = strtok(ip, ".");  /* String to token */
+    ptr = strtok(ip, ".");   /* String to token */
 
     if (ptr == NULL)
     {
@@ -53,13 +63,14 @@ int validate_ip(char *ip)
     {
         if (validate_number(ptr) == 0)
         {
-            return 0; // 29
+            return 0; 
         }
 
-        num = atoi(ptr);
+        num = atoi(ptr);   /* atoi() — ascii to int */
+
         if (num >= 0 && num <= 255)
         {
-            ptr = strtok(NULL, ".");
+            ptr = strtok(NULL, ".");    /* String to token */
 
             if (ptr != NULL)
             {
@@ -80,19 +91,19 @@ int validate_ip(char *ip)
     return 1;
 }
 
-int main()
+
+
+
+int validate_number(char *str)
 {
-    char ip[][20] = {"192.165.32.12",
-                     "073.64.213.74",
-                     "17.64.23.54",
-                     "18.684.279.abc"};
-
-    int i;
-
-    for (i = 0; i < 4; i++)
+    while (*str)
     {
-        validate_ip(ip[i]) ? printf("Valid\n") : printf("Invalid\n");
+        if (isdigit(*str) == 0)
+        {
+            return 0;
+        }
+        str++;
     }
-
-    return 0;
+    return 1;
 }
+
