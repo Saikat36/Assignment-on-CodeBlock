@@ -24,7 +24,7 @@ int shortestDistance(char s[][20], char word1[], char word2[])
         }
         if (d1 != -1 && d2 != -1)
         {
-            ans = (ans < abs(d1 - d2)) ? ans : abs(d1 - d2);
+            ans = (ans > abs(d1 - d2)) ? abs(d1 - d2) : ans ;
             /* (ans < abs(d1 - d2)) =  ans jodi boro hoi tahola condition false hobe and ans = abs(d1 - d2) hobe  */
             /* (ans < abs(d1 - d2)) =  ans jodi choto hoi tahola condition true hobe and ans = ans hobe  */
         }

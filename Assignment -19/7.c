@@ -17,14 +17,14 @@ if a IP address is 34.47.12 then it is invalid bcz it has 3 no
 #include <stdlib.h>
 #include <ctype.h>
 
-int validate_ip(char *ip);
-int validate_number(char *str);
+int validate_ip(char* );
+int validate_number(char *);
 
 
 int main()
 {
     char ip[][20] = {"192.165.32.12",
-                     "073.64.213.74",
+                     "000.00.000.00",
                      "17.64.23.54",
                      "18.684.279.abc"};
 
@@ -40,10 +40,9 @@ int main()
 
 
 
-int validate_ip(char *ip)
+int validate_ip(char *ip)       // char *ip  = char ip[]
 {
-    int i, num, dots = 0;
-    char *ptr;
+    int num, dots = 0;
 
     printf("%d = ",ip);
 
@@ -52,14 +51,10 @@ int validate_ip(char *ip)
         return 0;
     }
 
+    char *ptr;
     ptr = strtok(ip, ".");   /* String to token */
 
-    if (ptr == NULL)
-    {
-        return 0;
-    }
-
-    while (ptr)
+    while (ptr != NULL)
     {
         if (validate_number(ptr) == 0)
         {

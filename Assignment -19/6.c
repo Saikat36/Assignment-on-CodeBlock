@@ -7,11 +7,11 @@
 
 int main()
 {
-    char *strings[] = {"hello", "level", "madam", "racecar", "world"}; // "strings" is not declared as an array, it's declared as a pointer to an array.
+    char *strings[] = {"hello", "level", "madam", "racecar", "world"}; 
 
     /* Here, *strings[] is an array of pointers to characters, where each element points to the first character of a string.
 
-    When you want to use array subscript notation '[]' to access its elements, it needs to be declared as an array, not a pointer.
+    When you want to use array subscript notation '[]' to access its elements, it needs to be declared as an array, not a pointer. like this - 
 
     char strings[][10] = {"hello", "level", "madam", "racecar", "world"};     */
 
