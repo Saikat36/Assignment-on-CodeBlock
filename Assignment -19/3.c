@@ -44,7 +44,40 @@
 
 
 
+// #include <stdio.h>
+
+// int main()
+// {
+//     int rows, cols;
+//     printf("Enter the number of rows and columns: ");
+//     scanf("%d %d", &rows, &cols);
+
+//     char *array[rows][cols];
+//     printf("Enter the strings: \n");
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int j = 0; j < cols; j++)
+//         {
+//             printf("Enter string for element array[%d][%d]: ", i, j);
+//             scanf("%s", array[i][j]);
+//         }
+//     }
+
+//     printf("The 2D array of strings is: \n");
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int j = 0; j < cols; j++)
+//         {
+//             printf("%s ", array[i][j]);
+//         }
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
+
 #include <stdio.h>
+#include <string.h>
 
 int main()
 {
@@ -52,14 +85,15 @@ int main()
     printf("Enter the number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
 
-    char array[rows][cols];
+    char array[rows][cols]; // assumes maximum length of a string is 100 characters
     printf("Enter the strings: \n");
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < cols; j++)
         {
             printf("Enter string for element array[%d][%d]: ", i, j);
-            scanf("%s", array[i][j]);
+            fgets(array[i], 100, stdin);
+            array[i][strlen(array[i]) - 1] = '\0';
         }
     }
 

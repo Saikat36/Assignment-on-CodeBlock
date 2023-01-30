@@ -101,4 +101,3 @@ int validate_number(char *str)
     }
     return 1;
 }
-
