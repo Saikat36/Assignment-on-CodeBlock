@@ -13,7 +13,7 @@ void printReverseArray(int *arr, int size)
 
     int *end = arr + size - 1;
 
-    printf("end: %d\n", end);   // end: 6422040 na hoa end: 6422036 holo karon tar uporer line a *end = arr + size - 1; akhena "-1" kora hoa6a tai
+    printf("end: %d\n", end);   // "end: 6422040" na hoa "end: 6422036" holo karon tar uporer line a *end = arr + size - 1; akhena "-1" kora hoa6a tai
 
     printf("*end: %d\n", *end);
 

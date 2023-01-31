@@ -15,11 +15,13 @@ int main()
 
     char strings[][10] = {"hello", "level", "madam", "racecar", "world"};     */
 
-    int strings_len = sizeof(strings) / sizeof(strings[0]); // array length
+
+    int strings_len = sizeof(strings) / sizeof(strings[0]);     // array length
 
     for (int i = 0; i < strings_len; i++)
     {
-        int length = strlen(strings[i]); // length = strlen(hello) = 5
+        int length = strlen(strings[i]);    // string length = strlen(hello) = 5
+        
         int palindrome = 1;
 
         for (int j = 0; j < length / 2; j++)

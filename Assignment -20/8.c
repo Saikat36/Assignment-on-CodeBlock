@@ -4,10 +4,13 @@
 
 #include <stdio.h>
 
-int re_sum(int *arr, int size)
+int re_sum(int *arr, int size)      // if the size = 4
 {
     int sum = 0 ; 
     int *end = arr + size;
+
+    printf("\n\n%d\n",arr);         // arr = 6421952
+    printf("\n\n%d\n",end);         // end = arr + size = 6421968
 
     while (arr < end)    
     {
@@ -21,16 +24,20 @@ int re_sum(int *arr, int size)
 
 int main()
 {
-    int arr[10];
-    
-    printf("\nEnter some integer : ");
+    int n;
+    printf("\nHow much integer you want to sum : ");
+    scanf("%d",&n);
 
-    for (int i = 0; i < 10; i++)
+    int arr[n];
+
+    printf("\nYou have to enter %d integer: \n",n);
+
+    for (int i = 0; i < n; i++)
     {
         scanf("%d", &arr[i]);
     }
     
-    printf("\nLength of the string: %d\n\n", re_sum(arr,10));
+    printf("\nSum of the array is: %d\n\n", re_sum(arr,n));
     
     return 0;
 }

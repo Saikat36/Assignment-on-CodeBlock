@@ -32,5 +32,3 @@ void input(int *p, int size)
         scanf("%d",&p[i]);  // (p+i) = &p[i]
     }
 }
-
-// 1:04 min Application of pointers
