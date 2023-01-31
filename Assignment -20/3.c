@@ -30,7 +30,7 @@ int main()
 
     sorted(a,10);
 
-    printf("\n\n");
+    printf("\n\nAfter Sorting :  ");
 
     for (int i = 0; i < 10; i++)
     {

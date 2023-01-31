@@ -14,7 +14,7 @@ int main()
                          1st element - 1,2,3
                          2nd element - 4,5,6    */
 
-    printf("p = %u , q = %u \n\n\n", p, q);                           /*   p = 6422000 ,  q = 6422000           */
+    printf("p = %u , q = %u \n\n\n", p, q);                          /*   p = 6422000 ,  q = 6422000           */
 
     printf("*p = %d , **q = %d \n\n\n", *p, **q);                   /*    *p = 1 ,    **q = 1                 */
 
