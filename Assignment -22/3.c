@@ -19,7 +19,7 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        scanf("%d",p+i);        // store in dynamic memory
+        scanf("%d",&p[i]);        // store in dynamic memory
     }
 
     int sum = 0;
