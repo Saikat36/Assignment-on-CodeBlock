@@ -39,8 +39,8 @@ int main()
         printf("\nName = %s , Roll no = %d , Marks = %d\n\n", ptr[i].name, (ptr + i)->rollno, ptr[i].marks);
     } 
 
-    /*  Name = ptr[i].name = saikat ,      Roll no = (ptr + i)->rollno = 34 ,    Marks = ptr[i].marks = 245          */
-    /*  Name = (ptr + i)->name =saikat ,   Roll no = ptr[i].rollno  = 34    ,    Marks = (ptr + i)->marks = 245      */
+    /*  Name = ptr[i].name = saikat ,      Roll no = (ptr + i)->rollno = 34 ,    Marks = ptr[i].marks = 245       */
+    /*  Name = (ptr + i)->name =saikat ,   Roll no = ptr[i].rollno  = 34    ,    Marks = (ptr + i)->marks = 245   */
 
     free(ptr);
     return 0;

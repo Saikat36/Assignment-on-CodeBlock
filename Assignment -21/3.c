@@ -12,22 +12,21 @@ struct Employee
 };
 
 
-void display(struct Employee e)
+void display(struct Employee *e)
 {
-    printf("\nEnter Employee Id:  %d \n",e.id);
+    printf("\nEnter Employee Id:  %d \n",e->id);
 
-    printf("\nEnter Employee Name:  %s\n", e.name);
+    printf("\nEnter Employee Name:  %s\n", e->name);
 
-    printf("\nEnter Employee Salary: %d\n",e.salary);
+    printf("\nEnter Employee Salary: %d\n\n",e->salary);
 
 }
 
 int main()
 {
     struct Employee e = {123,"prateek", 15000}; 
-
-    printf("\nId = %d\n", e.id);
-    printf("Name = %s\n", e.name);
-    printf("Salary = %d\n\n", e.salary);
+    
+    display(&e);
+    
     return 0;
 }
