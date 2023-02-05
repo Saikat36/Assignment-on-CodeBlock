@@ -7,6 +7,7 @@
 void memoryLeak()
 {
     char *p = (char *)malloc(5 * sizeof(char));
+    free (p);
     // No free() statement to release the allocated memory
 }
 

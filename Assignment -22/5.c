@@ -18,14 +18,14 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        scanf("%d", p + i); // store in dynamic memory
+        scanf("%d", p + i );  // p + i = &p[i]
     }
 
     int sum = 0;
 
     for (int i = 0; i < n; i++)
     {
-        sum = sum + p[i];
+        sum = sum + p[i];   // p[i] = *(p+i) 
     }
 
     printf("\nSum of the %d no is : %d", n, sum);

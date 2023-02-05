@@ -10,14 +10,16 @@ int main()
     printf("Enter the size of memory in bytes: ");
     scanf("%d", &size);
 
-    int *ptr = (int *)malloc(size * sizeof(int));
+    int *ptr = (int *)malloc(size);
     if (ptr == NULL)
     {
         printf("Memory allocation failed.\n");
-        exit(0);
+        //exit(0);
+        return 1;
     }
 
     printf("Memory allocated successfully at address %p.\n", ptr);
-
+    
+    free(ptr);
     return 0;
 }

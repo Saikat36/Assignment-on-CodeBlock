@@ -40,7 +40,8 @@ int main()
     }
 
     printf("Largest element: %d\n", max);
-
+    
+    free (arr);
     return 0;
 }
 

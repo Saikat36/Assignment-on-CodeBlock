@@ -67,5 +67,6 @@ int main()
     printf("Largest element: %d\n", max);
     printf("Smallest element: %d\n", min);
 
+    free (arr);
     return 0;
 }

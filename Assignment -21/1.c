@@ -11,12 +11,12 @@ struct Employee
     int salary;
 };
 
-// int main()
-// {
-//     struct Employee e = {123,"prateek", 15000}; 
+int main()
+{
+    struct Employee e = {123,"prateek", 15000}; 
 
-//     printf("\nId = %d\n", e.id);
-//     printf("Name = %s\n", e.name);
-//     printf("Salary = %d\n", e.salary);
-//     return 0;
-// }
+    printf("\nId = %d\n", e.id);
+    printf("Name = %s\n", e.name);
+    printf("Salary = %d\n", e.salary);
+    return 0;
+}

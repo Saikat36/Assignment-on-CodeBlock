@@ -2,6 +2,7 @@
 
 /* 2. Write a function to take input employee data from the user. [ Refer structure from question 1 ] */
 
+
 #include <stdio.h>
 
 struct Employee
@@ -11,16 +12,25 @@ struct Employee
     int salary;
 };
 
-void input(struct Employee *e)
+void input_employee(struct Employee *e)
 {
-    printf("\nEnter Employee Id: \n");
-    scanf("%d", &e->id);
+    printf("Enter ID: ");
+    scanf("%d", &e->id);        //   &e->id    =   &(*e).id 
 
-    printf("\nEnter Employee Name: \n");
-    fflush(stdin);
-    scanf("%s", e->name);
+    printf("Enter Name: ");
+    scanf("%s", e->name);       //   e->name   =   (*e).name
 
-    printf("\nEnter Employee Salary: \n");
-    scanf("%d", &e->salary);
+    printf("Enter Salary: ");
+    scanf("%d", &e->salary);    //  &e->salary =   &(*e).salary
+}
 
+int main()
+{
+    struct Employee e;
+    input_employee(&e);
+
+    printf("\nId = %d\n", e.id);
+    printf("Name = %s\n", e.name);
+    printf("Salary = %d\n", e.salary);
+    return 0;
 }
