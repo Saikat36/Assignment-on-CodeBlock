@@ -14,7 +14,7 @@ struct Employee
 
 void display(struct Employee *e)
 {
-    printf("\nEnter Employee Id:  %d \n",e->id);
+    printf("\nEnter Employee Id:  %d \n", e->id);
 
     printf("\nEnter Employee Name:  %s\n", e->name);
 

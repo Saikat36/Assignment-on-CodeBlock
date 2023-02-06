@@ -10,12 +10,12 @@ struct student
     int rolllno;
     int marks;
 
-} s[2];
+} s[10];
 
 int main()
 {
     int i;
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 10; i++)
     {
         printf("Enter %d students name :  ", i + 1);
         scanf("%s", s[i].name);
@@ -27,7 +27,7 @@ int main()
         scanf("%d", &s[i].marks);
     }
 
-    for (i = 0; i < 2; i++)
+    for (i = 0; i < 10; i++)
     {
         printf("Name = %s , Roll no = %d , Marks = %d\n\n", s[i].name, s[i].rolllno, s[i].marks);
     }

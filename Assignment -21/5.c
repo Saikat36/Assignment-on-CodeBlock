@@ -12,7 +12,7 @@ struct Employee
     int salary;
 };
 
-void sortEmplyee(struct Employee *e, int size)
+void sortEmplyee(struct Employee e[], int size)
 {
     struct Employee temp;
 

@@ -5,8 +5,6 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <stdio.h>
-
 struct Employee
 {
     int id;

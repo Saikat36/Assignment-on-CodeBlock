@@ -42,6 +42,6 @@ int main()
     /*  Name = ptr[i].name = saikat ,      Roll no = (ptr + i)->rollno = 34 ,    Marks = ptr[i].marks = 245       */
     /*  Name = (ptr + i)->name =saikat ,   Roll no = ptr[i].rollno  = 34    ,    Marks = (ptr + i)->marks = 245   */
 
-    free(ptr);
+    free(ptr);      // Do-not forget to free the calloc function
     return 0;
 }

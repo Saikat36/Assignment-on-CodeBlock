@@ -35,7 +35,7 @@ int main()
         printf("Name = %s , Age = %d\n",(e+i)->name,(e+i)->age);
     }
 
-    free(e);
+    free(e);        // Do-not forget to free the calloc function
 
     return 0;
 }

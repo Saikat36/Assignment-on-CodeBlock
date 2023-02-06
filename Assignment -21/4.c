@@ -25,7 +25,7 @@ int maxSalary(struct Employee e[], int size)
         }
     }
     printf("\n\nEmployee with the highest salary: %s", e[maxIndex].name);
-    return max;
+    return max;     // here maximum salary return 
 }
 
 int main()
