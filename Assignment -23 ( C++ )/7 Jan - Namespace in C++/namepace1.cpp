@@ -1,3 +1,6 @@
+
+// Namespace name same hola vitorer elemnt same houa cholbena nahola programe run hobena
+
 #include<iostream>
 using namespace std;
 
@@ -8,7 +11,7 @@ namespace A
 }
 namespace A
 {
-    int y;
+    int y;  // jamon akhena namespace A ar y ta 2 jaigai a6e tai error di66a
     int z;
 }
 
