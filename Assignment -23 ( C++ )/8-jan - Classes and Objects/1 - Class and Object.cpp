@@ -9,18 +9,18 @@ class Addition
 
     int add();
 
-    Addition(int a, int b)
+    Addition(int a, int b)      // 2 parameter constructor
     {
         x = a;
         y = b;
     }
 
-    Addition()
+    Addition()                  // default constructor
     {
 
     }
 
-    Addition(int a)
+    Addition(int a)             // 1 parameter constructor
     {
         x = y = a;
     }
