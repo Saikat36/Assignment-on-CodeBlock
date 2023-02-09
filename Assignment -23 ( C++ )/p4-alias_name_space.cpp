@@ -14,10 +14,11 @@ namespace prateek_jain
 
 namespace pj = prateek_jain;        // alias namespace = pj
 
+using namespace pj;
 
 int main()
 {
-    cout<< pj::x;
+    cout<< x;
 
     return 0;
 }
