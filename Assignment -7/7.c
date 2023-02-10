@@ -11,7 +11,8 @@ int main()
     int a,b,flag = 0;
     printf("Enter two number: ");
     scanf("%d %d",&a,&b);
-
+    printf("All Prime numbers between this two given numbers: ");
+    
     for (int N = a; N <= b; N++)
     {
         flag = 0;

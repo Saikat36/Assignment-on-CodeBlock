@@ -6,7 +6,7 @@ using namespace std;
 
 //int add(int x = 0, int y, int z ) // Wrong Default Argument cz left side theka default hoina
 
-int add(int x, int y, int z = 0) // Default Argument
+int add(int x, int y, int z = 0) // Default Argument + function overloading
 {
     return x + y + z;
 }
