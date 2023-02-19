@@ -1,11 +1,13 @@
 
 /*
-2. Define a class Time to represent a time with instance variables h,m and s to store hour,
-minute and second. Also define following member functions
+2. Define a class Time to represent a time with instance variables h,m and s to store hour, minute and second. Also define following member functions - 
+
 a. void setTime(int,int,int)
 b. void showTime()
 c. void normalize()
-d. Time add(Time)   */
+d. Time add(Time)   
+
+*/
 
 #include <iostream>
 using namespace std;
@@ -36,7 +38,7 @@ public:
         min = min %60;
     }
 
-    Time add(Time t) // use for t2 = t1 + 2;
+    Time add(Time t) // use for t3 = t1.add(t2);
     {
         Time temp;   // temp is a object
 

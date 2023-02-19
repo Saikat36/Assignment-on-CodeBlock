@@ -24,10 +24,10 @@ public:
         cout << "x = " << x << " , y = " << y << endl;
     }
     
-    friend ABC add(ABC a, ABC b);       // friend function declere
+    friend ABC add(ABC, ABC);       // friend function declere
 };
 
-ABC add(ABC p, ABC q)                 // friend function define
+ABC add(ABC p, ABC q)              // friend function define
 {
     ABC temp;                  // temp is object
     temp.x = p.x + q.x;

@@ -42,5 +42,3 @@ int main()
     cout << endl;
     return 0;
 }
-
-// friend function = 1hour 11min

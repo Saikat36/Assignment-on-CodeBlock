@@ -73,7 +73,8 @@ int main()
     c2.setData(5, 6);
 
     Complex c7 = c1;
-    
+    c7.showData();
+
     cout << endl;
     return 0;
 }

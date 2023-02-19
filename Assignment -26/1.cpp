@@ -11,8 +11,7 @@ using namespace std;
 class Complex
 {
 private:
-    int a;
-    int b;
+    int a,b;
 
 public:
     void setData(int x, int y)
