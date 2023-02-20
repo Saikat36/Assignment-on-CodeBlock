@@ -29,15 +29,18 @@ int Cube:: cubeCal(int x ,int y ,int z)
 }
 void Cube::showData()
 {
-    cout << ;
+    int store = cubeCal(length, breadth, height);
+    cout << "The volume of the cube is: " << store << endl;
 }
 
 int main()
 {
     Cube c1;
-    c1.cubeCal(1,2,5);
+    c1 = Cube(7,2,5);
     c1.showData();
 
     cout << endl;
     return 0;
 }
+
+// 1:12
