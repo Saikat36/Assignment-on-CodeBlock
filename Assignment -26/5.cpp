@@ -2,40 +2,38 @@
 
 /* 5. Define a class Date and write a program to Display Date and initialise date object using Constructors */
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Data
 {
-    private:
-        char name;
-        int age,salary;
+private:
+    int dd, mm, yy;
 
-    public:
+public:
+    Data(int n, int a, int s)
+    {
+        dd = n;
+        mm = a;
+        yy = s;
+    }
 
-        Data(char n, int a, int s)
-        {
-            name = n;
-            age = a;
-            salary = s;
-        }
-
-        void displayData(char,int,int);
+    void displayData();
 };
 
-void Data:: displayData(char n,int a,int s)
+void Data::displayData()
 {
-    cout<< "\n"<< "Name is "<< n << " age is: " << a <<" salary is :  " << s << endl;
+    cout << "\nThe Entered Date is " << dd <<":"<<mm <<":"<< yy<< endl;
 }
 
 int main()
 {
-    Data p;
-    int a,b;
-    char c;
-    cout<<"Enter the employee name, age, salary"<<endl;
-    cin>> a >> b >> c;
-    p.displayData(a,b,c);
     
+    int a, b, c;
+    cout << "Enter the date, month & year" << endl;
+    cin >> a >> b >> c;
+    Data p(a,b,c);
+    p.displayData();
+
     return 0;
 }
